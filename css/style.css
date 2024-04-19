@@ -2,13 +2,14 @@ html, body
 {
 	display: block;
 	padding: 0 0;
+	overflow: hidden;
 	width: 100%;
 }
 
-body
+div.gamearea
 {
 	border: 1px solid #000;
 	border-radius: 12px;
-	margin: 0 auto !important;
+	display: block;
 	width: 80% !important;
 }

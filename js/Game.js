@@ -11,10 +11,12 @@ class Game
 		let self = this;
 
 		//Setup a resize listener for the window
-		window.onresize = function()
+		$(window).on('resize', function()
 		{
 			self.windowResize();
-		};
+		});
+
+		$(window).trigger('resize');
 	}
 
 	/**
@@ -24,6 +26,10 @@ class Game
 	{
 		let self = this;
 
-		alert("HERE");
+		$("#gamearea").css('height', (window.innerHeight - 30));
+		$(".body").css('height', window.innerHeight);
+		$("#gamearea").css('margin-top', 15);
+		$("#gamearea").css('margin-left', 'auto');
+		$("#gamearea").css('margin-right', 'auto');
 	}
 }
