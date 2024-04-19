@@ -13,3 +13,20 @@ div.gamearea
 	display: block;
 	width: 80% !important;
 }
+	div.gamearea div.topuibar
+	{
+		border-bottom: 1px solid #000;
+		display: block;
+		height: 5%;
+		width: 100%;
+	}
+		div.gamearea div.topuibar span.topuibar-span
+		{
+			height: 100%;
+		}
+
+
+.border-right
+{
+	border-right: 1px solid #000;
+}
