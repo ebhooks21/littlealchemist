@@ -1,0 +1,14 @@
+html, body
+{
+	display: block;
+	padding: 0 0;
+	width: 100%;
+}
+
+body
+{
+	border: 1px solid #000;
+	border-radius: 12px;
+	margin: 0 auto !important;
+	width: 80% !important;
+}
