@@ -10,6 +10,9 @@ class Game
 	{
 		let self = this;
 
+		self.player = null;
+		self.hud = null;
+
 		//Setup a resize listener for the window
 		$(window).on('resize', function()
 		{
@@ -17,6 +20,22 @@ class Game
 		});
 
 		$(window).trigger('resize');
+	}
+
+	/**
+	 * Function to start the game.
+	 */
+	start()
+	{
+		let self = this;
+
+		//Create a new player
+		self.player = new Player();
+
+		//Create a HUD
+		self.hud = new HUD();
+
+		(self.hud).draw(self.player);
 	}
 
 	/**

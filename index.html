@@ -9,17 +9,35 @@
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/Player.js"></script>
+		<script type="text/javascript" src="js/HUD.js"></script>
 		<script type="text/javascript" src="js/Game.js"></script>
 	</head>
 
 	<body class="body">
 		<div id="gamearea" class="gamearea">
 			<div id="topuibar" class="topuibar col-12">
-				<span class="topuibar-span col-4 float-start border-right" id="playernamearea"></span>
-				<span class="topuibar-span col-4 float-start border-right" id="playerlevelarea"></span>
-				<span class="topuibar-span col-4 float-start" id="playergoldarea"></span>
+				<div class="topuibar-div col-lg-3 col-md-5 float-start" id="playerstatsarea">
+					<div class="topuibar-div-section col-xl-2 col-lg-3 col-md-5 ms-2 float-start" id="playerportraitarea">
+					</div>
+
+					<div class="topuibar-div-section col-xl-9 col-lg-8 col-md-6 float-lg-start float-md-end" id="playerinfoarea">
+						<span id="playernamearea" class="col-12 ms-2 float-start"></span>
+						<span id="playerlevelarea" class="col-12 ms-2 float-start"></span>
+
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				<!--<div class="topuibar-div col-4 float-start" id="playerotherarea"></div>
+				<div class="topuibar-div col-4 float-start" id="playergoldarea"></div>-->
 
 				<div class="clearfix"></div>
+			</div>
+
+			<div id="bottomuibar" class="bottomuibar col-12">
+				
 			</div>
 		</div>
 	</body>
@@ -27,6 +45,6 @@
 	<script type="text/javascript">
 		let game = new Game();
 
-		//game.start();
+		game.start();
 	</script>
 </html>

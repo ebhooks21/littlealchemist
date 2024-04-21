@@ -11,16 +11,56 @@ div.gamearea
 	border: 1px solid #000;
 	border-radius: 12px;
 	display: block;
+	position: relative;
 	width: 80% !important;
 }
 	div.gamearea div.topuibar
 	{
-		border-bottom: 1px solid #000;
+		/*background-color: #CCCC92;*/
+		background: rgba(0, 0, 0, 0);
+		border-top-right-radius: 12px;
+		border-top-left-radius: 12px;
+		color: #FFFFFF;
 		display: block;
+		height: 7%;
+		width: 100%;
+	}
+		div.gamearea div.topuibar div.topuibar-div
+		{
+			background: rgba(0, 0, 0, .35);
+			border-radius: 12px;
+			height: 100%;
+		}
+			div.gamearea div.topuibar div.topuibar-div div.topuibar-div-section
+			{
+				border-radius: 12px;
+				height: 100%;
+			}
+				div.gamearea div.topuibar div.topuibar-div div.topuibar-div-section img.characterportrait-img
+				{
+					background: rgba(0, 0, 0, .85);
+					border-radius: 12px;
+					height: 100%;
+					opacity: 1.0;
+					width: auto;
+				}
+
+	div.gamearea div.bottomuibar
+	{
+		/*background-color: #CCCC92;*/
+		background: rgba(0, 0, 0, .55);
+		border-top: 1px solid #000;
+		border-bottom-right-radius: 12px;
+		border-bottom-left-radius: 12px;
+		color: #FFFFFF;
+		display: block;
+		font-size: 1em;
+		position: absolute;
+		bottom: 0;
 		height: 5%;
 		width: 100%;
 	}
-		div.gamearea div.topuibar span.topuibar-span
+		div.gamearea div.topuibar div.topuibar-div
 		{
 			height: 100%;
 		}
@@ -28,5 +68,5 @@ div.gamearea
 
 .border-right
 {
-	border-right: 1px solid #000;
+	border-right: 1px solid #FFFFFF;
 }
